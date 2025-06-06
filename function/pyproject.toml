@@ -1,0 +1,27 @@
+[project]
+name = "volans-parser"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pandas",
+    "openpyxl",
+    "google-cloud-bigquery",
+    "pendulum",
+    "db-dtypes",
+    "functions-framework",
+    "gcsfs",
+    "requests",
+    "xlrd>=2.0.1",
+    "unidecode>=1.4.0",
+    "pandas-gbq>=0.29.0",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+]
+
+[tool.ruff]
+lint.extend-select = ["I"]
